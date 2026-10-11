@@ -1,0 +1,21 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Large local model artifacts
+models/
+outputs/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.gguf
+
+# Runtime outputs
+evals/results/
+runs/
+wandb/
+

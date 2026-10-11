@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Ash",
+    "slug": "ash-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aswath.ash",
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsLocalNetworking": true
+        },
+        "NSLocalNetworkUsageDescription": "Connect to your local Ash assistant backend.",
+        "NSMicrophoneUsageDescription": "Ash needs access to your microphone to transcribe your voice into messages.",
+        "NSSpeechRecognitionUsageDescription": "Ash uses speech recognition to transcribe your voice into messages."
+      }
+    },
+    "plugins": [
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Ash needs access to your microphone to transcribe your voice into messages.",
+          "speechRecognitionPermission": "Ash uses speech recognition to transcribe your voice into messages."
+        }
+      ],
+      "expo-notifications"
+    ],
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.aswath.ash"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
